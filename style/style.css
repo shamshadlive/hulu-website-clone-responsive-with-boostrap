@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "GraphikWeb", Calibri, Tahoma, sans-serif;
+  --hulu-green-color: #1ce783;
+}
+
+/* Font */
+/* Normal */
+
+@font-face {
+  font-family: "GraphikWeb";
+  src: url("../font/Graphik-Font-Family/GraphikThin.otf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "GraphikWeb";
+  src: url("../font/Graphik-Font-Family/GraphikRegular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "GraphikWeb";
+  src: url("../font/Graphik-Font-Family/GraphikMedium.otf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "GraphikWeb";
+  src: url("../font/Graphik-Font-Family/GraphikSemibold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "GraphikWeb";
+  src: url("../font/Graphik-Font-Family/GraphikBold.otf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* header section */
+.header-main {
+  background-image: linear-gradient(
+      0deg,
+      #0000002e 60%,
+      rgba(0, 0, 0, 0.2) 90%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../images/header-bg.webp");
+  background-size: cover;
+  width: 100%;
+}
+
+.nav-btn-unique-style {
+  color: #a8afbd;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.15rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.hulu-green-color {
+  color: var(--hulu-green-color);
+}
+.hulu-bg-green-color {
+  background-color: var(--hulu-green-color);
+}
+
+.header-top-font {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.header-top-font ~ h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  line-height: 1.24;
+}
+
+.btn-get-themboth {
+  font-weight: 600;
+}
+
+.btn-get-themboth ~ a {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.btn-get-themboth:hover {
+  background-color: #1ce781c2;
+}
+
+.header-overlay {
+  background: linear-gradient(
+    179.81deg,
+    rgba(4, 4, 4, 0.7) 0.17%,
+    rgba(4, 4, 4, 0.45) 85.02%,
+    rgba(4, 4, 4, 0.3) 112.52%
+  ) !important;
+}
+
+.header-bottom-text {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/* section all the love */
+
+.bg-new-color {
+  background-color: #0b0c0f;
+}
+
+.medium-text {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.medium-text ~ p {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+/* <!-- hulu catogry --> */
+.cat-parent-div {
+  position: relative;
+}
+
+.cat-child-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+      156.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+.cat-img {
+  object-fit: contain;
+  max-width: 90%;
+}
+.cat-overlay-text {
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+}
+
+/* <!-- 
+        section Live TV Makes It Better --> */
+
+.minified-text-bold {
+  font-size: 0.7rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0px;
+  line-height: 1.46;
+  text-transform: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-new-right {
+  background-image: url("../images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.btn-new-animated-scroll {
+  background-image: url("../images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/* animation for img */
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}
+
+.btn-new-animated-scroll {
+  animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+}
+
+/* section 2  */
+
+#bg-change
+{
+  height: 50rem;
+}
+
+
+.section-2-bg {
+  background-image: linear-gradient(
+      0deg,
+      #0000002e 60%,
+      rgba(0, 0, 0, 0.2) 90%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../images/section-2-bg.webp");
+  background-size: cover;
+  width: 100%;
+}
+
+.section-3-bg {
+  background-image: linear-gradient(
+      0deg,
+      #0000002e 60%,
+      rgba(0, 0, 0, 0.2) 90%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../images/section-2-bg-2.webp");
+  background-size: cover;
+  width: 100%;
+}
+
+.section-4-bg {
+  background-image: linear-gradient(
+      0deg,
+      #0000002e 60%,
+      rgba(0, 0, 0, 0.2) 90%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../images/section-2-bg-3.webp");
+  background-size: cover;
+  width: 100%;
+}
+
+.slider-btn {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.slider-content-heading-txt {
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    top: 20px;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+#bg-change-content > div.active {
+  display: block !important;
+  animation: FadeIn 1s linear;
+  position: relative;
+}
+
+.img-icon-div {
+  background-image: url("../images/network-logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
+}
+
+.white-bottom-bar
+{
+    height: 5px; 
+    background-color: white;
+    transition: width 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955),transform 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+
+.sticky-header
+{
+  top:0px;z-index: 2; 
+}
+.sticky-header-border
+{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+
+/* select your plans */
+.btn-most-popular
+{
+  color: black;
+  background: var(--hulu-green-color);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 300;
+  border-radius: 20rem;
+  
+}
+
+.sticky-table-content
+{
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* 
+footere */
+.footer-heading
+{
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  color: #586174;
+  text-transform: uppercase;
+}
+
+.footer-heading-ul ul
+{
+  list-style: none;
+  margin:0 0.5rem  0 0 ;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: 0.07rem;
+  padding: 0;
+
+}
+
+.footer-heading-ul ul > li
+{
+  padding-bottom: 0.3rem;
+}
+
+.footer-links a
+{
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: gray;
+  margin: 1rem 1rem 1rem 0;
+
+}
